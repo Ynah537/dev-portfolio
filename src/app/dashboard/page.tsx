@@ -30,6 +30,14 @@ const GroceryApp = () => {
     const navigateToCategories = () => {
         router.push('/components/categories');
     };
+    
+    const navigateToProfile = () => {
+        router.push('/components/profile');
+    };
+
+    const navigateToCart = () => {
+        router.push('/components/cart');
+    };
 
     return (
         <Box height="100vh" display="flex" flexDirection="column" bg="white">
@@ -266,12 +274,21 @@ const GroceryApp = () => {
                         <Text fontSize="xs" color="black">Categories</Text>
                     </VStack>
                     
-                    <VStack  gap={1}>
+                    <VStack 
+                        gap={1}
+                        cursor="pointer"
+                        onClick={navigateToCart}
+                    >
                         <ShoppingCart size={20} color="#A0AEC0" />
                         <Text fontSize="xs" color="black">Cart</Text>
                     </VStack>
                     
-                    <VStack  gap={1}>
+                    <VStack 
+                        gap={1}
+                        cursor="pointer"
+                        onClick={navigateToProfile}
+                        _hover={{ color: "gray.600" }}
+                    >
                         <User size={20} color="#A0AEC0" />
                         <Text fontSize="xs" color="black">Profile</Text>
                     </VStack>
