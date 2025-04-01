@@ -150,9 +150,9 @@ const GroceryApp = () => {
             
             {/* Tabs */}
             <Flex justify="center" gap={4} mb={6} px={4}>
-                <Text color="black" fontWeight="semibold">Flash Sale</Text>
+                <Text color="gray.300" fontWeight="semibold">Flash Sale</Text>
                 <Text color="black" fontWeight="bold" fontSize="lg">Popular</Text>
-                <Text color="black" fontWeight="semibold">New Arrival</Text>
+                <Text color="gray.300" fontWeight="semibold">New Arrival</Text>
             </Flex>
             {/* Products */}
             <Grid templateColumns="repeat(2, 1fr)" gap={4} px={4}>
