@@ -1,8 +1,10 @@
 
 # dev-portfolio
-A digital space where my code meets creativity.
 
 A convenient online grocery store where you can easily browse, shop, and order fresh produce, pantry staples, and household essentials — all from the comfort of your home.A convenient online grocery store where you can easily browse, shop, and order fresh produce, pantry staples, and household essentials — all from the comfort of your home.
+
+A digital space where my code meets creativity.
+
 =======
 This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
 
