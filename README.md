@@ -1,5 +1,5 @@
 
-# dev-portfolio
+# way-go
 
 A convenient online grocery store where you can easily browse, shop, and order fresh produce, pantry staples, and household essentials — all from the comfort of your home.A convenient online grocery store where you can easily browse, shop, and order fresh produce, pantry staples, and household essentials — all from the comfort of your home.
 
