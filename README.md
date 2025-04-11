@@ -1,6 +1,6 @@
 
 # dev-portfolio
-"A digital space where my code meets creativity."
+A digital space where my code meets creativity.
 =======
 This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
 
