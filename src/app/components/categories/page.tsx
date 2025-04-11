@@ -21,16 +21,76 @@ const AllCategories = () => {
 
   // Category data with icons, background colors, and names
   const categories = [
-    { name: 'Snacks', icon: Cookie, bgColor: 'orange.200', iconBgColor: 'orange.300' },
-    { name: 'Breakfast', icon: Egg, bgColor: 'yellow.200', iconBgColor: 'yellow.300' },
-    { name: 'Canned', icon: Fish, bgColor: 'pink.200', iconBgColor: 'pink.300' },
-    { name: 'Sauce', icon: Pizza, bgColor: 'yellow.200', iconBgColor: 'orange.300' },
-    { name: 'Drinks', icon: Wine, bgColor: 'purple.200', iconBgColor: 'purple.300' },
-    { name: 'Coffee', icon: Coffee, bgColor: 'brown.200', iconBgColor: 'brown.300' },
-    { name: 'Fruits', icon: Apple, bgColor: 'red.200', iconBgColor: 'red.300' },
-    { name: 'Vegetables', icon: Carrot, bgColor: 'green.200', iconBgColor: 'green.300' },
-    { name: 'Dairy', icon: Milk, bgColor: 'blue.200', iconBgColor: 'blue.300' },
-    { name: 'Desserts', icon: IceCream, bgColor: 'pink.200', iconBgColor: 'pink.300' },
+    { 
+      name: 'Snacks', 
+      icon: Cookie, 
+      bgColor: 'orange.200', 
+      iconBgColor: 'orange.300', 
+      bgImage: 'url(/snacks.png)' 
+    },
+    { 
+      name: 'Breakfast', 
+      icon: Egg, 
+      bgColor: 'yellow.200', 
+      iconBgColor: 'yellow.300', 
+      bgImage: 'url(/breakfast.png)' 
+    },
+    { 
+      name: 'Canned', 
+      icon: Fish, 
+      bgColor: 'pink.200', 
+      iconBgColor: 'pink.300', 
+      bgImage: 'url(/canned.png)' 
+    },
+    { 
+      name: 'Sauce', 
+      icon: Pizza, 
+      bgColor: 'yellow.200', 
+      iconBgColor: 'orange.300', 
+      bgImage: 'url(/sauce.png)' 
+    },
+    { 
+      name: 'Drinks', 
+      icon: Wine, 
+      bgColor: 'purple.200', 
+      iconBgColor: 'purple.300', 
+      bgImage: 'url(/drink.png)' 
+    },
+    { 
+      name: 'Coffee', 
+      icon: Coffee, 
+      bgColor: 'brown.200', 
+      iconBgColor: 'brown.300', 
+      bgImage: 'url(/coffee.png)' 
+    },
+    { 
+      name: 'Fruits', 
+      icon: Apple, 
+      bgColor: 'red.200', 
+      iconBgColor: 'red.300', 
+      bgImage: 'url(/fruits.png)' 
+    },
+    { 
+      name: 'Vegetables', 
+      icon: Carrot, 
+      bgColor: 'green.200', 
+      iconBgColor: 'green.300', 
+      bgImage: 'url(/vegetables.jpg)' 
+    },
+    { 
+      name: 'Dairy', 
+      icon: Milk, 
+      bgColor: 'blue.200', 
+      iconBgColor: 'blue.300', 
+      bgImage: 'url(/dairy.jpg)' 
+    },
+    { 
+      name: 'Desserts', 
+      icon: IceCream, 
+      bgColor: 'pink.200', 
+      iconBgColor: 'pink.300', 
+      bgImage: 'url(/desserts.jpg)' 
+    },
   ];
 
   // Handle back button click
@@ -66,6 +126,9 @@ const AllCategories = () => {
                 cursor="pointer"
                 transition="transform 0.2s"
                 _hover={{ transform: 'scale(1.05)' }}
+                backgroundImage={category.bgImage}
+                backgroundSize="cover"
+                backgroundPosition="center"
               >
                 <Circle size="12" bg={category.iconBgColor}>
                   <Icon as={category.icon} boxSize={6} color="white" />
