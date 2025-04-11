@@ -15,7 +15,6 @@ import {
     Circle,
     Center,
     Badge,
-
 } from '@chakra-ui/react';
 import { Search, Home, Grid as GridIcon, Folder, User, ShoppingCart } from 'lucide-react';
 import { useRouter } from 'next/navigation';
@@ -24,7 +23,7 @@ const GroceryApp = () => {
     const [cartCount, setCartCount] = useState(0);
     const router = useRouter();
 
-    const addToCart = (productName: string) => {
+    const addToCart = () => {
         setCartCount(prevCount => prevCount + 1);
     };
 
@@ -180,7 +179,7 @@ const GroceryApp = () => {
                     <Flex justify="space-between" align="center" mt={2}>
                         <Text fontWeight="bold" color="black">$8.92</Text>
                         <Button 
-                            onClick={() => addToCart("Mushroom Sauce")}
+                            onClick={addToCart}
                             size="sm"
                             bg="gray.100" 
                             borderRadius="full"
@@ -208,7 +207,7 @@ const GroceryApp = () => {
                     <Flex justify="space-between" align="center" mt={2}>
                         <Text fontWeight="bold" color="black">$20.72</Text>
                         <Button 
-                            onClick={() => addToCart("Ice Cream")}
+                            onClick={addToCart}
                             size="sm"
                             bg="gray.100" 
                             borderRadius="full"
@@ -279,25 +278,8 @@ const GroceryApp = () => {
                         gap={1}
                         cursor="pointer"
                         onClick={navigateToCart}
-                        position="relative"
                     >
-                        <Box position="relative">
-                            <ShoppingCart size={20} color="#A0AEC0" />
-                            {cartCount > 0 && (
-                                <Circle 
-                                    size="16px" 
-                                    bg="red.500" 
-                                    color="white" 
-                                    position="absolute" 
-                                    top="-5px" 
-                                    right="-5px"
-                                    fontSize="10px"
-                                    fontWeight="bold"
-                                >
-                                    {cartCount}
-                                </Circle>
-                            )}
-                        </Box>
+                        <ShoppingCart size={20} color="#A0AEC0" />
                         <Text fontSize="xs" color="black">Cart</Text>
                     </VStack>
                     
